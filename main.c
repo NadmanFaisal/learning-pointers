@@ -16,6 +16,7 @@ int main(int argc, char *argv[]) {
     - `*pY` accesses the value stored at the address pY is pointing to (which is y).
     
     Printing only `pX` (`printf("%p", pX)`) prints the **memory address** stored in `pX`.
+    
     Printing `*pX` (`printf("%d", *pX)`) prints the **value** stored at that memory address.
     This is also called dereferencing the pointer.
     */
