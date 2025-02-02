@@ -74,7 +74,7 @@ int main(int argc, char *argv[]) {
     */
 
     int table[MAX];
-    int *pointer = &table[0];       // Pointer initialized to the first element of table
+    int *pointer = &table;       // Pointer initialized to the first element of table
     *pointer = 45;                  // Assign 45 to table[0]
     pointer++;                      // Move pointer to table[1]
     *pointer = 55;                  // Assign 55 to table[1]
