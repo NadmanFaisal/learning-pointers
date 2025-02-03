@@ -53,4 +53,13 @@ int main(int argc, char *argv[]) {
 
     printf("Memory address of x: %p\n", pX);    // prints memory address of x, same as before
     printf("Value of y: %p\n", pY);             // prints memory address of y, same as before
+
+    // This is how you can reassign pointers to other pointers
+    pX = pY;
+
+    printf("Value of reassigned x: %d\n", *pX);    // prints 16 (because pX now points to y)
+    printf("Value of reassigned y: %d\n", *pY);    // prints 16
+
+    printf("Memory address of reassigned x: %p\n", pX);    // prints memory address of y
+    printf("Value of reassigned y: %p\n", pY);             // prints memory address of y, same as above
 }
